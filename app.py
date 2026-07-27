@@ -2,7 +2,7 @@ from flask import Flask, send_file, request
 import logging
 app = Flask(__name__)
 
-@app.route("/pixel.png")
+@app.route("/pixel.jpg")
 def pixel():
     ip = request.headers.get("X-Forwarded-For", request.remote_addr)
     if ip:
